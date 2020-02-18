@@ -1,0 +1,52 @@
+Pasos:
+Si ya tienes el proyecto en symfony y la base de datos
+modificar el .env de acuerdo a tus credenciales:
+   DATABASE_URL=mysql://root:Inuyasha25@127.0.0.1:3306 basepj?serverVersion=5.7
+
+las security.yaml del api 
+poner en linea 28 el anonymus: true
+poner en linea 40 el IS_AUTHENTICATED_ANONYMOUSLY
+
+
+----------------------------------------------------------------------------------------
+Uso de postman:
+
+Good afternoo, JHon
+en la tabed pane das a "+" como cuando abres una nueva pestaña en google chrome
+ahi dice: Untitled Request
+
+ahi usamos el metodo GET:
+¿Como se que path ponerle?
+
+Vamos a reporitorio del Api_Symfony:
+composer install (si no lo tienes)
+php -S localhost:8000 -t public/
+
+Luego abrimos otra terminal y ejecutamos
+php bin/console debug:router
+
+AHi veremos todas nuestras APIS que podemos usar y sus metodos, estan en la 3ra columna
+
+----------------------------------------------------------------------------------------
+El paso siguiente seria ir al proyecto de Symfony
+
+y copiarnos el UserController que te deje en el repositorio de github "Reservas",en la carpeta Controller, del Src (Del apiPoliJobs)
+
+Luego, en nuestras Entidades, dependiendo a la que vayamos a ahcer API, le ponemos:
+
+use ApiPlatform\Core\Exception\InvalidArgumentException;
+
+esa libreria nos permite trabajar con APIS
+abajto de esto, vemos como comentado un ORM\Entity, etc, etc
+
+le pegamos esto:
+/**
+ * @ApiResource()
+ */
+
+Eso nos permite hacer saber que estamos trabajando con un recurso de API
+entonces, podemos copiar el link y ¡YA APARTE DE SABEMOS EL PATH QUE LE PONDREMOS, TAMBIEN PODREMOS HACER USO DE ESE PATH!
+
+
+
+

@@ -1,0 +1,33 @@
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 85vh;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+  margin-top: 20%;
+  background-color: black;
+  opacity: 0.8;
+  width: 25%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.car1{
+    background-image: url('../images/2.jpg');
+    height: 85vh;
+}
+
+.car2{
+    background-image: url('../images/1.jpg');
+    height: 85vh;
+}
+
+.car3{
+    background-image: url('../images/3.jpg');
+    height: 85vh;
+}
+

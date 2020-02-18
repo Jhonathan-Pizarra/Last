@@ -1,0 +1,23 @@
+.ContenedorOfertas{
+    background-color: #001529;
+    padding: 10%;
+    margin: 10%;
+
+}
+h1{
+    text-align: center;
+}
+
+.Leters{
+    color: white;
+    padding-top: 3%;
+}
+
+button{
+
+    margin-top: 5%;
+    background-color: #1F78B4;
+    border-color: #1F78B4;
+    color: white;
+    padding: 2%;
+}
